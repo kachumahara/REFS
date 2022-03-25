@@ -1,0 +1,33 @@
+Sparx Enterprise Architechure
+https://www.youtube.com/watch?v=MczA69WdDM4			
+
+Enterprise Data Modeling
+
+1. Understanding Data Modeling
+
+Common Terminologies
+a. Model: A scaled-down, non fucntional representation of an object, system or idea. (Data Mindsets).
+and Diagrams: A two-dimensional visual representation that is often abstracted or symbolic.
+
+Data Model is a collection of metadata that represents the logical orginazation, shape and meaning of data.
+
+b. Domain (Table): Describes the area and boundaries of a data element. Its describes how values are stored.
+
+c. Kinds of data (Master or Transactional)
+Master Data that describes an entity, place or thing. Master data doesnt change often, its rare in change (Customer, Place, Thing).
+Transactional Data are like, purchase, check-in, auto-orders.
+Lookup (dimensional tables)data describes codes / IDs with FK, "W" = work phone
+Metadata (attributes) describes the item, descriptions, data types.
+
+d. Logical vs Physical. You dont model a table, you model an entity. A Table is a container. You are describing an Entity (Customer). Relationship is an action that joins entities together.
+
+
+RELATIONAL DATA MODEL
+
+When you break your data into entities, you are normalizing your data.
+
+https://www.youtube.com/watch?v=ApdfmT_zFkQ&list=PL7C31BvsvMgBChkW5ZsURcQ_8sSFeTi4J&index=1
+
+https://www.youtube.com/watch?v=3EtRTEWyVcs
+
+

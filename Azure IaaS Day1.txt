@@ -1,0 +1,125 @@
+Azure IaaS Overview
+
+What is Cloud Computing
+Cloud Computing: where services such as servers, storage and application are delivered to an organizations computer and devices over the internet as opposed to LAN. Getting ride of on premise and having these services to the cloud.
+
+Cloud Computing Options.
+a. Public Cloud - Commericial cloud
+b. Private cloud - owned servers privately.
+c. Hybrid Cloud - private and public coming together, from on premise to cloud. 
+
+Benefits of Cloud Computing:
+a. Lower Cost, pay as you go.
+b. More Flexibility, provision several services on the fly
+c. Reduced management, vendor manages hardware and software.
+
+Cloud Computing Services
+1. IaaS - Host
+2. PaaS - Build
+3. SaaS - Consume
+
+Azure Compute Services
+Virtual Machines
+Virtual Scale Sets
+Batch
+Cloud Services
+Service Fabric
+Kubernetes Services
+Container Instances
+Functions
+App Services
+
+Azure Resource Manager Overview (ARM)
+Its a deployment model that is the successor to Azure Service Management and allow you to deploy and manage Azure resources in a more imporved way.
+
+ARM is written in JSON. JSON is a data format that is used to exchange data between a web browser and a server, but it is less verbose, complex and can deal with highly structured data.
+
+ARM manage and monitor all resources.
+
+Resource Providers
+Its a service that supplies the resources that you deploy and made through Azure Resource manager. Make sure your resource providers are registered. Parameters of Resource Provider are ID, Name, Type and Location.
+
+ARM Template Elements
+a. $Schema is location of JSON files that describes the template language.
+b. Parameters are values provided when deployment
+c. Resources
+d. ContentVersion
+e. Variables
+f. Output
+
+Two types of Deployment.
+a. Complete Deployment.
+b. Incremental Deployement
+
+PowerShell Without Templates:
+Deploy resources without templates. 
+
+Azure Policy
+Azure Policy Deployment. Policy definition is created using JSON.
+
+Azure Security and Locks
+
+Azure locks allow you to prevent the accidental deletion or modification or resource groups or resources.
+
+Create Key Vaults
+
+These are key security features.
+
+Event Logging Process
+It tracks deployments, activities
+
+Resource Deployment Flow.
+
+
+AZURE STORAGE
+Its scalable, durable and highly available. Its secure and encrypted at rest 
+
+Storage Services
+1. General purpose V1,V2, Blob, V1 has been depleted. V2 is the available. 
+
+Tiers 
+a. Hot- Higher storage cost, day to day access
+b. Cool - Lower cost, interval access
+c. Archive - Lowest cost.
+Standard storage account is prefered. 
+
+Premium Storage account is not support for block blobs, append blods, azure tables, or azure queues. Only support Local Redundancy Storage (LRS).
+
+Azure Storage Services
+
+a. Blob (Container) Storage
+b. Table Storage
+c. Queue Storage store msgs
+d. File Storage (file share)
+e. Managed Disk Storage.
+
+AZ 401 Certification.
+
+Soft Delete on Data Protection.
+When data is deleted, its on soft delete and Azure gives you the capability to overwrite or retrieve and retain data as configured.
+
+Data is replicated in the same data center.(LRS)
+
+LRS, ZRS, GRS, RAZRS, RAGRS
+
+Replication Models
+LRS
+GRS
+ZRS
+GZRS
+
+Azure File Sync
+
+It allows you to synchronize files between an Azure file share and other services via internet.
+
+
+
+
+
+
+
+
+
+
+
+

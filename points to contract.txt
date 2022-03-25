@@ -1,0 +1,114 @@
+1. Reservation
+Add equipment
+Time of renting
+Expected date of return.
+Your location
+Jobsite site Location
+
+
+SUNSTATE EQUIPMENT API
+Name of Equipment
+Equipment ID
+daily rentage
+weekly rentage
+monthly rent
+Purchase Date
+Equipment Details
+
+
+Jobsite Details
+
+
+Delivery Details
+a. Equipment your are deliverying
+b. The Jobsite you are deliverying the equipment to
+c. The customer that needs the equipment
+e. The sunstate branch that has the equipment
+f. The Delivery Date
+g. The Delivery Time
+h. The driver details thats deliverying up.
+i. Delivery Instruction
+
+
+Telematics data
+
+Schedule Dates
+Delivery Date
+Delivery Time
+Pick-up Date
+Pick-up Time
+
+
+Pickup Details
+a. Equipment your are picking up
+b. The Jobsite you are picking the equipment from
+c. The customer that used the equipment
+d. The sunstate branch to you are taking the equipment to.
+e. The pick up Date
+f. The pick up Time
+g. The driver details thats picking it up.
+i. Pick up instructions
+
+
+What we have in contracts
+
+CONTRACTS
+1. The name of the company hiring the equipment.
+2. The address of the company hiring the equipment
+3. The hiring company Rep
+4. The hiring company account details with Sunstate
+5. The Contract number
+5. The name of the Equipment  
+6. The Equipment ID
+7. How many days 
+8. How many weeks
+9.  How many months
+10. How many hours
+11. Daily Standard rate
+12. Weekly standard rate
+13. Monthly standard rate
+14. The Jobsite
+15. Start Date
+16. Start Time
+17. Return Date 
+18. Return Time
+19. Sunstate Branch
+20. Branch ID
+21. Region
+22. Branch Manager
+23. Branch Employee that entered the contract in the system
+24. Contract Type
+
+CUSTOMER
+1. The customer name
+2. Customer Address
+3. Customer sunstate account number
+4. Customer status
+5. Customer Phone
+6. Fax
+7. Email
+8. 
+
+The reason behind these seperate tables is to address each entity with their reference id. My own suggestion.
+EMPLOYEE_ADDDRESS TABLE  (Emp_id)
+JOBSITE_ADDRESS TABLE (Job_id)
+CUSTOMER_ADDRESS TABLE (cust_id)
+
+
+It’s no secret that technology is changing the way the construction industry operates. What is considered as one of the final frontiers for technology, the construction industry has seen the highest amount of venture capital activity of any technology sector.
+
+Six predictions for the future of the equipment side of the construction industry:
+
+Digitization of rental commerce and operations
+Adoption of telematics for improved preventative maintenance
+Advancement of VR/AR for improved training in alignment with the new ANSI standards
+Adoption of semi-autonomous equipment for safer inspection and operation
+Growth in telehandler sales leading to smaller fleets and higher utilization
+Adoption of 100% hybrid and electric fleets
+Technology needs to be thought of as workforce enablement, not as workforce replacement. To date, there is a reluctance to adopt technology on the commerce side of the business either out of fear of being replaced, satisfaction with the status quo, or a lack of urgency to innovate.
+
+The use of technology and the data that comes with it allows equipment rental companies and operators to focus more time and energy on the human element of the business that has built this industry.
+
+It allows us to be smarter around our economic decision making, more efficient with our sales and fulfillment, and more personalized with the customer experience we provide.
+
+The biggest shift is in our perception of technology and our behavior as consumers of it.

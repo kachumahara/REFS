@@ -1,0 +1,96 @@
+get create script for table from source
+get create script for indexes from source
+combine scripts and rename special characters
+	remove any foreign key constraints
+
+azure sql table
+	Primary key
+	Matching indexes
+
+Azure sql and delta tables
+	matching fields with special characters replaced
+		# - NBR
+		$ - AMT
+	
+	Identify any date fields
+	identify any date time field pairs
+	add corresponding fields
+
+	Field types for 
+	original field date - type numeric
+		delta   	double
+		azure sql 	numeric
+
+	original field time - type numeric
+		delta 		double
+		azure sql 	numeric
+		
+	new field combine date and time
+		delta 		timestamp
+		azure sql 	datetime
+		
+	new field date only
+		delta		date
+		azure sql 	date
+
+Create sql table in azure sql db
+Create a merge stored procedure in the destination database
+	
+clone Workspace/EDS/Data Engineer/CDC/Telematics/Tables/Alert/
+to your folder Workspace/EDS/Data Engineer/CDC/<source>/Tables/<tablename>/
+
+edit all notebooks to have correct NotebookName, field lists and function names
+	remove audit table cells from the create notebooks if you have already cloned
+
+add your tablename to the table "CDCNotebookTableList" in the framework db (Make sure the Source name case matches the corresponding folder in Databricks)
+	server: 	devwus2-mdp-sql01.database.windows.net
+	dbname: 	Framework
+	Table:		CDCNotebookTableList
+	
+	Fields: 
+		NotebookName:  	executeCDCExtract
+		Source:			Schema Name (Make sure the Source name case matches the corresponding folder in Databricks)
+		TableName:		<YourTableName>	
+		CDCExecutionGroupKey: 99   	(All new objects should be added to group 99 which is a pending group that is not ever ran)
+		IsActive: 		0		
+		CreatedDate: 	getdate()
+		ModifiedDate: 	getdate()
+
+Testing		
+Enable CDC on your table at source	
+	example:  EXECUTE sys.sp_cdc_enable_table @source_schema = N'dbo',@source_name = N'<your tablename>'  ,@role_name  = N'telematicsadmin';
+	example:  EXECUTE sys.sp_cdc_enable_table @source_schema = N'dbo',@source_name = N'<your tablename>'  ,@role_name  = N'wsdataadmin';
+
+make sure there are changes in the cdc table at the source
+Verify ADLS path is correct
+
+run your process cdc notebook - use cluster devwus2-dkcluster-03
+run you stream to raw notebook - using cluster devwus2-dkcluster-03
+	verify data is moving into azure sql and data lake 
+
+disable CDC on your table at source
+	example: 	EXECUTE sys.sp_cdc_disable_table @source_schema = N'dbo',@source_name = N'<your tablename>'  ,@capture_instance  = N'all';
+
+
+Checkin SQL scripts to devops
+
+ 
+
+INSERT INTO [dbo].[CDCNotebookTableList] (
+    NotebookName, 
+    Source, 
+    TableName, 
+    CDCExecutionGroupKey, 
+    IsActive, 
+    CreatedDate, 
+    ModifiedDate
+)
+VALUES (
+    'executeCDCExtract',
+    'WSData', 
+    'EQPREGFL', 
+    99, 
+    0, 
+    GETDATE(), 
+    GETDATE()
+);

@@ -1,0 +1,21 @@
+IMAGE STORAGE AND RETRIEVAL 
+
+Azure Blob Storage is a service for storing unstructured data.
+
+
+Azure blob storage stores filesystem files like images
+
+Create a container and have to blob stoarge account in Azure
+
+Create storage account
+Create Container (images and videos)
+Blog (files with name  - images and videos)
+
+To retrieve, you querry the Azure Data Lake Storage Gen2 with the blob name
+
+Client applications can access objects in Blob storage via HTTP/HTTPS Azure Blob storage API
+
+1. Image sizing. Having a unified image sizing. 200 X 200
+
+SYSTEM OF RECORD OF IMAGES
+DIGITAL ASSET MANAGEMENT.

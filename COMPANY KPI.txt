@@ -1,0 +1,63 @@
+Revenue Cycle (CONTRACT)
+
+1.	Creating Customers & Modifying the Customer Database
+2.	Credit Approval 
+3.	Order Fulfillment
+4.	Pricing
+5.	Invoicing & Recording Revenue
+6.	Collections / Management of Customer Accounts
+7.	Cash Receipts Processing
+8.	Sales Returns and Credit Notes
+9.	Quarterly / Month end Cutoff Review
+
+Fixed Asset Cycle (EQUIPMENT)
+
+1.	Acquiring Fixed Assets
+2.	Managing Fixed Assets
+3.	Depreciation
+4.	Physical Inventories
+5.	Disposals
+6.	Fixed Asset Roll-Forward
+7.	Tires/Parts Inventory
+8.	Impairment of Fixed Assets and Intangible Assets
+
+Expenditure Cycle (ACCOUNTS)
+
+9.	Vendor File Maintenance
+10.	Purchasing 
+11.	Receiving
+12.	Invoice Processing
+13.	Invoice Payment Processing
+14.	A/P Accruals
+15.	A/P Aging
+16.	Rebates/Discounts
+17.	Debt Agreements
+18.	Bank Account Maintenance 
+19.	Segregation of Duties
+
+Financial Close & Reporting Cycle (MANAGEMENT)
+
+1.  Policies and Procedures    
+2.   Closing Schedule  
+3.   Consolidation of Monthly Results 
+4.   Accounting Period Close (APC)
+5.   Changes to Chart of Accounts
+6.   Intercompany transactions
+7.   Prior Period Adjustments  
+8.   Open/Closed Contracts    
+9.   Accruals
+10. Goodwill
+11. Tax
+
+Payroll Cycle (EMPLOYEE)
+
+•	Hiring of employees
+•	Maintaining employee files
+•	Payroll/paying employees
+•	Termination of employees
+•	Employee Benefits
+•	PS compliance & Other
+
+
+KSQLDB
+https://www.youtube.com/watch?v=Da6MwowCGHo&list=RDCMUCmZz-Gj3caLLzEWBtbYUXaA&start_radio=1

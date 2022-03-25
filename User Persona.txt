@@ -1,0 +1,140 @@
+In general, I have looked at some of the servers (with databases), we do need all the data in them, but at the same time, we have priorities that we need to tackle now that will not disrupt the transactions and answering immediate needs. 
+
+
+User Persona 
+
+1. Use proper and easily understandable naming conventions to make the design schemas effective.
+
+2. Avoid quotes, hyphens, special characters and spaces in between, while putting names as these may not be valid.
+
+3. Always use singular table names like CustomerName or BillNumber etc., vs. CustomerNames or BillNumbers. As the table denotes a collection of entries, there’s no need to name it in plural
+
+4. Avoid any irrelevant prefixes or suffixes in the table names. For example, use Department instead of DepartmentList.
+
+5. Document the design schema and instructions for a better understanding of the same later and write comments for triggers and scripts.
+
+6. You can use normalization as needed for optimizing the performance. Under-normalization and over-normalization may however result in impaired performance.
+
+7. To ensure security, always keep the passwords encrypted, don’t provide admin privileges to all users and enable authentication for accessing the database.
+
+Understanding your data and the various attributes of each element in it will help you to devise the best schema design for your proposed database. A well-prepared schema will help your data grow in a controlled manner. Even when your data keeps expanding, you can easily analyze each field with properly mapped relation with one another as specified in your schema.
+
+Set Naming Convention rules on primary and foreign keys, stored procedure, views, functions, etc. Standard pattern that increase readibility of the whole data model.
+
+A well defined and readable user persona platform will be much easier to query the Information_schema.
+
+DATABASE could reference the DOMAIN or Business Role
+
+SCHEMA could be named dbo.
+
+TABLES
+In naming tables, we use signluar noun, not plurals. When we need to have specific logical reference in a tabel, we could use a real reference name like user_role as we might have user table. We need to make the reference name more like giving more explicit understanding of the information - look up.
+
+Columns
+Generally, it is ideal to have your PK to reference id as against having the name of the table with a prefix of id attached (contractID). Since we are in the table, we have id name as primary key, giving it a contraint name like user_pk
+
+
+Questions to ask
+1. What are the consistent issues / data / questions you usually get either from managements, customers and BI wants you to get for them?
+2. If you are to redesign the database, will you be happy to do so and add some fields that will easily address some of the challenges you are having now?
+3. What are the challenges you usually encounter?
+4. What are the informamation you think should be captured now and ones that should be removed?
+5. Who and who uses the contract table, and how do they use the contract table? What information do they normally want, what decision do they want to make? The idea is to have a well-defined mission statement that we will refer to during the design process and keep us focused when we make decisions. 
+6. What database and tables gives you much details about contracts, billing, jobsites and customers?
+7. How do we track customer's feedback? Customer engagement data from reviews on our services to improve customer support.
+8. What are the information you received then when you created the database?
+9. Do you have any documentation?
+
+
+Approach
+We will have a DEV environment to test all our changes. A replica of the existing database / tables we will be working on. We will impliment the changes on this replica, if the test goes well, then we migrate. We will make one change at a time ... and only one change (The contract table). we will make sure each change is correct before you move on. 
+
+The data requirements document is used to confirm the understanding of requirements with users. To make sure that it is easily understood, it should not be overly formal or highly encoded. The document should give a concise summary of all users’ requirements – not just a collection of individuals’ requirements – as the intention is to develop a single shared database.
+
+The requirements should not describe how the data is to be processed, but rather what the data items are, what attributes they have, what constraints apply and the relationships that hold between the data items.
+
+Steps
+1. Determine the purpose of your database (So many questions needs to be answered)
+
+2. Find and organize the information required (Information gathering on Contract, Gather all of the types of information you might want to record in the database, such as from inception of contract to end)
+
+3. Divide the information into tables (From the information we have gathered from LJ and Andy, we will divide them into entities)
+
+4. Turn information items into columns (We will decide the items that will make the columns list)
+
+5. Specify primary keys (We specify the primarys keys that uniquely identify each row)
+
+6. Set up the table relationships (Look at each table and define their relationships)
+
+7. Refine your design (We will analyse our design for errors, create tables and see if we have captured our all requirements, make adjustments)
+
+8. Apply the normalization rules (We apply normalization rules to see if our tables are structured currectly.)
+
+Things to avoid
+Duplication information (redundant data) is bad, it waste spaces and increases likelihood of errors and inconsistencies. 
+Avoid not capturing important data and this has to come from the consistent questions and requirements from data users and stakeholders. It is very important that see the full picture of the business process (Contract process)
+
+Things to uphold
+The correctness and completeness of information is important. We need to have accurate information, if not any information pulled from our database will be incorrect and any decision made on that will be wrong and detrimental.
+
+Design Process
+
+How do we track customer's feedback? Customer engagement data from reviews on our services to improve customer support. When capture all the data, then we can develop Smart KPIs. It is very important to have strategic KPIs, this will enable you develop more strategies.
+
+The company that leverages data and knows the right answers to key customer questions before they even ask will have a competitive advantage. We have to leverage on our clean data to move from present business analytics to Predictive business analytics. This force the business to identify the most important KPIs to run the business and drive attention. While it's a challenging and time-consuming process, the creation of a fine-tuned EDW, stocked with the right data will no doubt ease management, empower the business, and enhance the customer experience for years to come.
+
+We have to docyment our process.
+
+https://www.phase2technology.com/blog/successful-requirements-gathering
+
+
+Tools that we need to have.
+
+A company code is used to reference
+TS a company sister
+ZZ records 
+
+
+RAOHDRFL
+
+Rental Purchase
+Equipment sale Quote
+
+IBM i 
+Desk analysis 
+VMware Fusion
+X-Analysis 13.1.11
+
+If you are to model this structure again, considering the the new world approach. What will you do differently.
+
+
+When you pull a contract number, it will pull out all the details of the contract, jobsite, customer, billing approach.
+
+If you are to redesign the database, will you be happy to do so and add some fields that will easily address some of the challenges you are having now?
+The close contract is the closed invoice
+The open contract is with a zero sequence
+
+Jobsite
+Billing cycle and 
+Contract
+Taxes
+sales tax
+heavy usage tax
+
+Compnay Code and Branch Code
+
+Transactions
+
+SYSPGMFL
+SYSSECFL
+SECOPTFL
+SECPGMFL
+
+RAOHDRFL OPEN HEADER
+RACHDRFL CLOSED HEADER
+RACDETFL CLOSED DETAIL
+RAODETFL OPEN DETAIL
+RASDETFL SALES DETAILS HAS RECORDS 1998 TO 2015
+
+
+

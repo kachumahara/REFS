@@ -1,0 +1,33 @@
+Azure Virtual Machines Workloads
+
+Development and Test
+
+Hybrid applications
+
+Running applications in the cloud
+
+Disaster recovery
+
+What do I need to think about before creating a VM
+c
+18918877
+
+Press window key plus shift and S
+
+Day3
+Azure Backup
+Data cannot decrease, it increases daily and storing data could be challenging.
+
+Three types of backups are Full, Differential and Incremental back ups
+
+Visual Studio Enterprise Subscription
+
+Recovery Services Vault is the location where you store your backup.
+
+AAD is an identity management solution.
+
+https://workshopplus.eventbuilder.com/api/event/48620/occurrence/45584/certificate?rauth=77.2929163.220e65b39fbf467ad08fa2b659fd2bea906aeb0f160e59c5421057e3ba65d46f&certPassword=9DC%3EZPm%7C
+
+
+
+

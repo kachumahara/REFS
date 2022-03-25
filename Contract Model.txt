@@ -1,0 +1,26 @@
+Contract Table Mode
+
+1. Contract ID
+2. Contract Description
+3. Contract Value
+4. Contract Start Date
+5. Contract End Date
+6. Jobsite ID
+7. Employee ID
+8. Address ID
+9. Billing ID
+10. Equipment ID
+11. Time ID
+12. Revenue ID
+13. Work_Order_ID
+14. Customer ID
+15. Order_ID
+16. Branch ID
+17. DELIVERY ID
+Opinion : Contract Reference number
+
+EQUIPMENT
+
+SPARK ENTERPRISE DATA MODEL ARCHITECT
+
+Contract Ref

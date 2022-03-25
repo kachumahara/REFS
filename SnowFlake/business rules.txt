@@ -1,0 +1,59 @@
+SNOWFLAKE SCHEMA IS GOOD FOR OLAP AND FOR DATA WAREHOUSE DESIGN.
+
+This model can involve only one fact table and multiple dimension tables which must be further normalized until there is no more room for further normalization.
+
+Snowflake Schema makes it possible for the data in the Database to be more defined, in contrast to other schemas, as normalization is the main attribute in this schema type.
+
+This Multidimensional nature makes it easy to implement on complex Relational Database systems, thus resulting in effective Analysis & Reporting processes.
+
+Multiple Dimension tables, which are created as a result of normalization, serve as lookup tables when querying with Joins. In this case we will propose to have 3NF (third normal form) which can meet the 4NF if properly structured.
+
+
+In the determining the process, we have to determine the entities, attributes and relationships that will be used to build a data model, we want to gain a thorough understanding of what type of datas are in the organization, how they are used and what time frames they are used. These datas do not yeild the required understanding of the total business by themselves. It becomes meaningful only when it reflects properly defined business rules. 
+
+Properly defined business rules derived from the companies operations will help to define entities, attributes, relationships and constraints.
+
+The key process of identifying and documenting business rules is essential to database design. It helps to standardize the company's view of data. 
+
+Entity names should be descriptive of the objects in the business environment, and use terminology that is familiar to the users. 
+
+
+Design / Modeling
+
+Three Steps I want to follow are as follows
+1. Conceptual Model: We need to identify the ENTITIES AND RELATIONSHIPS, these meeting is obviously the stakeholders involved in the project. Entity naming convention should be paramount for end user good experience. Once the entities are defined and signed off, then step 2
+
+2. Logical Model: This helps to define the detailed structure of the entities and its relationships. The logical model forms the basis for the physical model. It clearly represents the business requirements. The detailed structure of each entity is designed in local model. The attributes of the entities and types are identified / designed. This defines the columns(attributes) and its data types for each entity. When this is defined and signed off, then step 3
+
+3. Physical Model:
+The physical data model visually represents the actual database schema and it is platform specific, we will implement this to the specific database this model was designed for using its specific data types.
+
+DEALING WITH NULL VALUES
+For example, one of an EMPLOYEE table’s attributes is likely to be the EMP_INITIAL. However, some employees do not have a middle initial. Therefore, some of the EMP_INITIAL values may be null.  In any case, even if nulls cannot always be avoided, they must be used sparingly. In fact, the existence of nulls in a table is often an indication of poor database design. Nulls, if used improperly, can create problems because they have many different meanings. For example, a null can represent: An unknown attribute value, A known, but missing, attribute value. A “not applicable” condition. Nulls can create problems when functions such as COUNT, AVERAGE, and SUM are used.
+
+Reasons for snowflake over Star Schema
+
+Snowflake schemas are good for data warehouses, star schemas are better for datamarts with simple relationships. Snowflake schemas have no redundant data (Same data exist is multiple places), and easier to maintain.
+
+Data marts support a single department while a data warehouse supports the entire organization. 
+
+Greater overall database organization. Reduction of redundant data. Data consistency within the database. A much more flexible database design. A better handle on database security.
+
+
+Normalization is a technique for organizing data in a database. It is important that a database is normalized to minimize redundancy (duplicate data) and to ensure only related data is stored in each table. It also prevents any issues stemming from database modifications such as insertions, deletions, and updates.
+
+It is helpful to divide the large database table into smaller tables and link them using relationship. It avoids duplicate data or no repeating groups into a table.
+
+
+DO WE PREFER TO HAVE 
+
+Well, database normalization is the process of structuring a relational database in accordance with a series of so-called normal forms in order to reduce data redundancy and improve data integrity. In simpler terms, normalization makes sure that all of your data looks and reads the same way across all records.
+
+POINTS
+An enterprise data warehouse model prescribes that the data warehouse contain aggregated data that spans the entire organization. This model sees the data warehouse as the heart of the enterprise’s information system, with integrated data from all business units.
+
+
+We need to capture the existing business terminology and rules
+Is there any proposed change in business terminology?
+We also need to capture existing application terminology and rules
+Is there any proposed change in application terminology and rules
